@@ -1,0 +1,26 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.contents-container {
+  .is-web {
+    background: #aa0000;
+  }
+
+  .is-mobile {
+    display: none;
+    background: #0000aa;
+  }
+
+  @media (max-width: 990px) {
+    & {
+      .is-web {
+        display: none;
+      }
+
+      .is-mobile {
+        width: 100%;
+        height: auto;
+        display: flex;
+      }
+    }
+  }
+}
