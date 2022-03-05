@@ -2,12 +2,11 @@
 
 .contents-container {
   .is-web {
-    background: #aa0000;
+    text-align: center;
   }
 
   .is-mobile {
     display: none;
-    background: #0000aa;
   }
 
   @media (max-width: 990px) {
@@ -20,6 +19,7 @@
         width: 100%;
         height: auto;
         display: flex;
+        text-align: center;
       }
     }
   }

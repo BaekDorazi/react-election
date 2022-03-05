@@ -5,8 +5,8 @@ import Contents from "../components/Contents";
 const App = () => {
     return (
         <div className='app-container'>
-            <Header />
-            <Contents />
+            <Header/>
+            <Contents/>
         </div>
     );
 }

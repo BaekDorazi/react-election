@@ -1,23 +1,12 @@
 import React, {useCallback} from "react";
 import sampleImg from "../image/logo512.png";
-import ImageGallery from "react-image-gallery";
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {Pagination} from "swiper";
+
+import 'swiper/css';
+import "swiper/css/pagination";
 
 const Contents = (props) => {
-    const images = [
-        {
-            original: sampleImg,
-            thumbnail: sampleImg
-        },
-        {
-            original: sampleImg,
-            thumbnail: sampleImg
-        },
-        {
-            original: sampleImg,
-            thumbnail: sampleImg
-        }
-    ];
-
     const sampleImageMake = useCallback(() => {
         let image = [1, 2, 3];
 
@@ -29,20 +18,35 @@ const Contents = (props) => {
         });
     }, []);
 
+    const sampleSlideImage = useCallback(() => {
+        let image = [1, 2, 3];
+
+        return image.map(i => {
+            return (
+                <SwiperSlide>
+                    <img src={sampleImg}/>
+                </SwiperSlide>
+            );
+        });
+    }, []);
+
     return (
         <div className="contents-container">
+
+
             <div className="is-web">
                 {sampleImageMake()}
             </div>
 
             <div className="is-mobile">
-                <ImageGallery
-                    items={images}
-                    infinite={false}
-                    showBullets={true}
-                    showPlayButton={false}
-                    showFullscreenButton={false}
-                    showThumbnails={false}/>
+                <Swiper
+                    spaceBetween={0}
+                    slidesPerView={1}
+                    loop={true}
+                    pagination={{clickable: true}}
+                    modules={[Pagination]}>
+                    {sampleSlideImage()}
+                </Swiper>
             </div>
         </div>
     );
