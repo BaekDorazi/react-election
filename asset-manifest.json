@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-election/static/css/main.41f73cf0.css",
-    "main.js": "/react-election/static/js/main.b02a0881.js",
+    "main.css": "/react-election/static/css/main.a7b0738f.css",
+    "main.js": "/react-election/static/js/main.33b57afa.js",
     "index.html": "/react-election/index.html",
-    "main.41f73cf0.css.map": "/react-election/static/css/main.41f73cf0.css.map",
-    "main.b02a0881.js.map": "/react-election/static/js/main.b02a0881.js.map"
+    "main.a7b0738f.css.map": "/react-election/static/css/main.a7b0738f.css.map",
+    "main.33b57afa.js.map": "/react-election/static/js/main.33b57afa.js.map"
   },
   "entrypoints": [
-    "static/css/main.41f73cf0.css",
-    "static/js/main.b02a0881.js"
+    "static/css/main.a7b0738f.css",
+    "static/js/main.33b57afa.js"
   ]
 }
