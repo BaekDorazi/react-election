@@ -13,7 +13,7 @@ const Contents = (props) => {
         return image.map(i => {
             return (
                 <div>
-                    <img src={sampleImg}/>
+                    <img className="image-size" src={sampleImg}/>
                 </div>);
         });
     }, []);
@@ -24,7 +24,7 @@ const Contents = (props) => {
         return image.map(i => {
             return (
                 <SwiperSlide>
-                    <img src={sampleImg}/>
+                    <img className="image-size" src={sampleImg}/>
                 </SwiperSlide>
             );
         });
@@ -32,8 +32,6 @@ const Contents = (props) => {
 
     return (
         <div className="contents-container">
-
-
             <div className="is-web">
                 {sampleImageMake()}
             </div>
