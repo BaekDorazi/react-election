@@ -1,12 +1,14 @@
 import React from "react";
-import sampleImg from "../image/logo512.png";
+
+import logo from "../image/logo.png";
+import logo2 from "../image/logo_02.png";
 
 const Header = (props) => {
     return (
         <div className="header-container">
-            <img className="logo" src={sampleImg}/>
+            <img className="logo" src={logo}/>
 
-            <img className="right-image" src={sampleImg}/>
+            <img className="right-image" src={logo2}/>
         </div>
     );
 };
