@@ -1,4 +1,3 @@
-import ImageTest from "./ImageTest";
 import Header from "../components/Header";
 import Contents from "../components/Contents";
 
